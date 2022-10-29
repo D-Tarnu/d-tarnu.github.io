@@ -1,0 +1,163 @@
+:root {
+    --black: #09090B;
+    --pink: #daa49a;
+    --blue: #bdd4e7;
+    --neutral: #71816D;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+*, 
+::after, 
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: flex-start;
+    background-color: var(--black);
+    color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans", sans-serif;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 2.6rem;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Akshar', sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: start;
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+p {
+    font-weight: 400;
+    margin-top: .25rem;
+}
+
+a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+h2:hover,
+a:hover {
+    transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+    transform: translateY(-2px);
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+#app {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+header a {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 0.2rem;
+    border-color: var(--pink);
+    padding: 0.75rem 0 0 0;
+    width: 9.7rem;
+}
+
+header:hover {
+    transform: translateY(-2px);
+    transition: all 0.25s cubic-bezier(.25,.8,.25,1);
+    color: var(--blue);
+}
+
+main {
+    display: grid;
+    font-size: 1.5rem;
+    color: var(--neutral);
+    gap: 1vh;
+    height: 100%;
+    width: 100%;
+    padding: 3.5rem 0rem 0 0;
+}
+
+nav {
+    display: grid;
+    gap: 6.5vh;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    /* pointer-events: none; */
+
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+
+    margin-right: 1rem;
+}
+
+.entry {
+    grid-row: 1;
+}
+
+.linked {
+    display: inline-flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.entry svg,
+.entry img,
+.paper svg,
+.paper img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        align-items: center;
+    }
+}
