@@ -66,7 +66,7 @@ function replaceMain(tab) {
       <br><br>
     </h3>`
     
-    for (let i = 0; i < linkData.length; i++) {
+    for (let i = 0; i < paperList.length; i++) {
       const { title, journal_title, journal_link, year, pdf_link } =  paperList[i];
       el.append(paperGen(title, journal_title, journal_link, year, pdf_link));
     }
