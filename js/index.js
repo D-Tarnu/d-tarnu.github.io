@@ -7,7 +7,7 @@ const paperList = [
     pdf_link: "https://arxiv.org/pdf/2202.05897v2.pdf",
   },
   {
-    title: "2. The order of the fundamental solution of X\u00B2 - DY\u00B2 = 1 in Z[sqrt(D)]/<D> (with Stephen Choi).\u00A0",
+    title: "2. The order of the fundamental solution of X\u00B2 - DY\u00B2 = 1 in Z[sqrt(D)]/&lt;D&gt; (with Stephen Choi).\u00A0",
     journal_title: "Integers",
     journal_link: "http://math.colgate.edu/~integers/w84/w84.pdf",
     year: ", 2022.\u00A0",
@@ -48,15 +48,13 @@ function replaceMain(tab) {
     el.removeChild(el.firstChild);
   }
   if (tab == 'home') {
-    el.innerHTML = `<div class="id"></div>
-        <div style="display: flex; flex-direction: row; margin-top: 2.75rem">
-          <img src="/imgs/face.png">
-          <div style="display: grid; margin-bottom: 3.5rem; margin-top: 3.5rem; align-items: center">
-            <h3> Occupation: PhD Candidate </h3>
-            <h3 class="linked"> Affiliation:&nbsp; <a href="http://www.math.sfu.ca/">SFU Math</a> </h3>
-            <h3> Contact: [first]_[last]@sfu.ca </h3>
-            <h3 class="linked">Documents:&nbsp; <a href="/docs/CV.pdf"> CV</a>.</h3>
-          </div>
+    el.innerHTML = `<div style="display: flex; flex-direction: row; margin-top: 2.75rem">
+        <img src="/imgs/face.png" class="id">
+        <div style="display: grid; margin-bottom: rem; margin-top: rem; align-items: center">
+          <h3> Occupation: PhD Candidate </h3>
+          <h3 class="linked"> Affiliation:&nbsp; <a href="http://www.math.sfu.ca/">SFU Math</a> </h3>
+          <h3> Contact: [first]_[last]@sfu.ca </h3>
+          <h3 class="linked">Documents:&nbsp; <a href="/docs/CV.pdf"> CV</a>.</h3>
         </div>
       </div>`
   }

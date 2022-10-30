@@ -151,10 +151,9 @@ img {
     border-style: solid;
     border-radius: 15px;
     border-width: 0.2rem;
-    border-color: var(--pink);
-    padding: 0.75rem 0 0 0;
-    width: 9.7rem;
-    font-family: 'Inconsolata', monospace;
+    border-color: var(--neutral);
+    padding: 0rem 0 0 0;
+    width: 30.7rem;
 }
 
 .entry svg,
