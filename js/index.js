@@ -61,7 +61,7 @@ function replaceMain(tab) {
   else if (tab == 'research') {
     el.innerHTML = `<h3>
       I am interested in dynamical systems and analytic/combinatorial number theory.
-      <br>In particular, I am interested in discrete-time switching dynamical systems and the theory of Pell equations.
+      <br>In particular, I am interested in switching dynamical systems and the theory of Pell equations.
       <br>The following are a list of papers I've worked on.
       <br><br>
     </h3>`
