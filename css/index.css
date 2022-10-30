@@ -1,8 +1,8 @@
 :root {
-    --black: #09090B;
-    --pink: #daa49a;
-    --blue: #bdd4e7;
-    --neutral: #71816D;
+    --black: #E1B07E;
+    --pink: #2366A9;
+    --blue: #246EB9;
+    --neutral: #000000;
 }
 
 html {
@@ -145,6 +145,16 @@ img {
     display: inline-flex; 
     flex-direction: row; 
     flex-wrap: wrap;
+}
+
+.id {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 0.2rem;
+    border-color: var(--pink);
+    padding: 0.75rem 0 0 0;
+    width: 9.7rem;
+    font-family: 'Inconsolata', monospace;
 }
 
 .entry svg,

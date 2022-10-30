@@ -48,15 +48,17 @@ function replaceMain(tab) {
     el.removeChild(el.firstChild);
   }
   if (tab == 'home') {
-    el.innerHTML = `<div style="display: flex; flex-direction: row; margin-top: 2.75rem">
-      <img src="/imgs/face.png">
-      <div style="display: grid; margin-bottom: 3.5rem; margin-top: 3.5rem; align-items: center">
-        <h3> Occupation: PhD Candidate </h3>
-        <h3 class="linked"> Affiliation:&nbsp; <a href="http://www.math.sfu.ca/">SFU Math</a> </h3>
-				<h3> Contact: [first]_[last]@sfu.ca </h3>
-				<h3 class="linked">Documents:&nbsp; <a href="/docs/CV.pdf"> CV</a>.</h3>
-      </div>
-    </div>`
+    el.innerHTML = `<div class="id"></div>
+        <div style="display: flex; flex-direction: row; margin-top: 2.75rem">
+          <img src="/imgs/face.png">
+          <div style="display: grid; margin-bottom: 3.5rem; margin-top: 3.5rem; align-items: center">
+            <h3> Occupation: PhD Candidate </h3>
+            <h3 class="linked"> Affiliation:&nbsp; <a href="http://www.math.sfu.ca/">SFU Math</a> </h3>
+            <h3> Contact: [first]_[last]@sfu.ca </h3>
+            <h3 class="linked">Documents:&nbsp; <a href="/docs/CV.pdf"> CV</a>.</h3>
+          </div>
+        </div>
+      </div>`
   }
   else if (tab == 'research') {
     el.innerHTML = `<h3>
