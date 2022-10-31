@@ -150,7 +150,7 @@ img {
 .id {
     border-style: solid;
     border-radius: 15px;
-    border-width: 0.2rem;
+    border-width: 0.15rem;
     border-color: var(--neutral);
     padding: 0rem 0 0 0;
     width: 30.7rem;
