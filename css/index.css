@@ -1,5 +1,5 @@
 :root {
-    --black: #E1B07E;
+    --black: #E4B88B; /* #E1B07E */
     --pink: #2366A9;
     --blue: #246EB9;
     --neutral: #000000;
@@ -168,5 +168,11 @@ img {
 @media screen and (min-width: 400px) {
     body {
         align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #app {
+        flex-direction: row;
     }
 }

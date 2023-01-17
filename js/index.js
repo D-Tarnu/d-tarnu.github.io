@@ -1,8 +1,15 @@
 const paperList = [
   {
-    title: "3. On maximal autocorrelations of Rudin-Shapiro sequences. Submitted, 2022.\u00A0",
+    title: "4. Limiting behavior of Rudin-Shapiro sequence autocorrelations. In preparation.\u00A0",
     journal_title: "",
     journal_link: "/asd/",
+    year: "",
+    pdf_link: "",
+  },
+  {
+    title: "3. On maximal autocorrelations of Rudin-Shapiro sequences.\u00A0",
+    journal_title: "Journal of Approximation Theory, accepted.\u00A0",
+    journal_link: "https://www.sciencedirect.com/science/article/pii/S0021904523000047",
     year: "",
     pdf_link: "https://arxiv.org/pdf/2202.05897v2.pdf",
   },
@@ -30,14 +37,17 @@ function paperGen(title, journal_title, journal_link, year, pdf_link) {
   jlink.textContent = journal_title;
   jlink.href = journal_link;
 
-  plink.textContent = "(pdf)";
-  plink.href = pdf_link;
-
   paper.className = "linked";
   paper.innerHTML += title;
   paper.append(jlink);
   paper.innerHTML += year;
-  paper.append(plink);
+
+  if (pdf_link.length > 0) {
+    const plink = document.createElement("a");
+    plink.textContent = "(pdf)";
+    plink.href = pdf_link;
+    paper.append(plink);
+  }
 
   return paper
 }
@@ -60,8 +70,8 @@ function replaceMain(tab) {
   }
   else if (tab == 'research') {
     el.innerHTML = `<h3>
-      I am interested in dynamical systems and analytic/combinatorial number theory.
-      <br>In particular, I am interested in switching dynamical systems and the theory of Pell equations.
+      I am interested in number theory, combinatorics, and approximation theory.
+      <br>In particular, I am interested in the theory of Pell equations, sequence autocorrelations, and switching dynamical systems.
       <br>The following are a list of papers I've worked on.
       <br><br>
     </h3>`
