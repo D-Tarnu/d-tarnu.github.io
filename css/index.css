@@ -172,7 +172,7 @@ img {
 }
 
 @media (max-width: 600px) {
-    #app {
-        flex-direction: row;
+    main {
+        flex-direction: column;
     }
 }
