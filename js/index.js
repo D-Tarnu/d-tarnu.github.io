@@ -8,9 +8,9 @@ const paperList = [
   },
   {
     title: "3. On maximal autocorrelations of Rudin-Shapiro sequences.\u00A0",
-    journal_title: "Journal of Approximation Theory, accepted.\u00A0",
+    journal_title: "Journal of Approximation Theory",
     journal_link: "https://www.sciencedirect.com/science/article/pii/S0021904523000047",
-    year: "",
+    year: ", accepted.\u00A0",
     pdf_link: "https://arxiv.org/pdf/2202.05897v2.pdf",
   },
   {
@@ -57,7 +57,7 @@ function replaceMain(tab) {
   while (el.firstChild) {
     el.removeChild(el.firstChild);
   }
-  if (tab == 'home') {
+  if (tab == 'home') { //first flex-direction row needs to be changed
     el.innerHTML = `<div style="display: flex; flex-direction: row; margin-top: 2.75rem">
         <img src="/imgs/face.png" class="id">
         <div style="display: grid; margin-bottom: rem; margin-top: rem; align-items: center">
