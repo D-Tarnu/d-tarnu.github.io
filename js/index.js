@@ -1,6 +1,6 @@
 const paperList = [
   {
-    title: "4. Limiting behavior of Rudin-Shapiro sequence autocorrelations. In preparation.\u00A0",
+    title: "4. Limiting behavior of Rudin-Shapiro sequence autocorrelations (with Stephen Choi). In preparation.\u00A0",
     journal_title: "",
     journal_link: "/asd/",
     year: "",
@@ -61,7 +61,7 @@ function replaceMain(tab) {
     el.innerHTML = `<div style="display: flex; flex-direction: row; margin-top: 2.75rem">
         <img src="/imgs/face.png" class="id">
         <div style="display: grid; margin-bottom: rem; margin-top: rem; align-items: center">
-          <h3> Occupation: PhD Candidate </h3>
+          <h3> Occupation: Mathematician </h3>
           <h3 class="linked"> Affiliation:&nbsp; <a href="http://www.math.sfu.ca/">SFU Math</a> </h3>
           <h3> Contact: [first]_[last]@sfu.ca </h3>
           <h3 class="linked">Documents:&nbsp; <a href="/docs/CV.pdf"> CV</a>.</h3>
@@ -70,9 +70,8 @@ function replaceMain(tab) {
   }
   else if (tab == 'research') {
     el.innerHTML = `<h3>
-      I am interested in number theory, combinatorics, and approximation theory.
-      <br>In particular, I am interested in the theory of Pell equations, sequence autocorrelations, and switching dynamical systems.
-      <br>The following are a list of papers I've worked on.
+      I am interested in number theory and combinatorics, particularly using analytic methods.
+      <br>The following is a list of papers I've worked on.
       <br><br>
     </h3>`
     
