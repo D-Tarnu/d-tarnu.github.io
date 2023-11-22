@@ -64,7 +64,6 @@ function replaceMain(tab) {
           <h3> Occupation: Mathematician </h3>
           <h3 class="linked"> Affiliation:&nbsp; <a href="http://www.math.sfu.ca/">SFU Math</a> </h3>
           <h3> Contact: [first]_[last]@sfu.ca </h3>
-          <h3 class="linked">Documents:&nbsp; <a href="/docs/CV.pdf"> CV</a>.</h3>
         </div>
       </div>`
   }
